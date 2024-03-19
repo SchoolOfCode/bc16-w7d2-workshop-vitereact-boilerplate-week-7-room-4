@@ -1,34 +1,32 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.css";
 import HeroSection from "./hero-section/hero-section";
 import ArticleContainer from "./article-container/article-container";
+import Footer from "./footer/footer";
 
 function App() {
-	const [count, setCount] = useState(0);
+	// const [count, setCount] = useState(0);
 
 	return (
-		
-			<div className="container">
-				<header className="logo">
-					<p>🔥 Fireplace Palace</p>
-				</header>
+		<div className="container">
+			<header className="logo">
+				<p>🔥 Fireplace Palace</p>
+			</header>
 
-				<HeroSection/>
+			<HeroSection />
 
-				<hr className="hidden-hr" />
-				<h2>How it works.</h2>
-				<hr />
-				
-				<ArticleContainer/>
+			<hr className="hidden-hr" />
+			<h2>How it works.</h2>
+			<hr />
 
-				<footer>
-					<p>Find us on:</p>
-					<p>© Fireplace Palace</p>
-					<p>Facebook Instagram Tiktok</p>
-					<a href="">info@firepalace.co.uk</a>
-				</footer>
-			</div>
-		
+			<ArticleContainer />
+			<Footer
+				text1={"Find us on:"}
+				text2={"© Fireplace Palace"}
+				text3={"Facebook Instagram Tiktok"}
+				anchor={"info@firepalace.co.uk"}
+			/>
+		</div>
 	);
 }
 
