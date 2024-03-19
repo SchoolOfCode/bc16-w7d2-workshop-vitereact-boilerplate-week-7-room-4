@@ -1,39 +1,37 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
 	const [count, setCount] = useState(0);
 
 	return (
-		<>
-			<div class="container">
-				<header class="logo">
+		
+			<div className="container">
+				<header className="logo">
 					<p>🔥 Fireplace Palace</p>
 				</header>
 
-				<section class="hero-section">
+				<section className="hero-section">
 					<img
-						class="hero-image"
-						src="images/hero-mobile.png"
+						className="hero-image"
+						src="/images/hero-mobile.png"
 						alt="Fireplace Image"
 					/>
 
-					<div class="orange-box-container">
-						<section class="orange-box">
+					<div className="orange-box-container">
+						<section className="orange-box">
 							<h1>Discover the Perfect Fireplace ...</h1>
 							<p>
 								Book consultation:{" "}
-								<span class="phone-number">0121 345 6789</span>
+								<span className="phone-number">0121 345 6789</span>
 							</p>
 						</section>
 					</div>
 				</section>
-				<hr class="hidden-hr" />
+				<hr className="hidden-hr" />
 				<h2>How it works.</h2>
 				<hr />
-				<section class="article-container">
+				<section className="article-container">
 					<article>
 						<img src="images/how-it-works-1.png" alt="Fireplace with sofas" />
 						<h3>Give us a call ...</h3>
@@ -65,7 +63,7 @@ function App() {
 					<a href="">info@firepalace.co.uk</a>
 				</footer>
 			</div>
-		</>
+		
 	);
 }
 
