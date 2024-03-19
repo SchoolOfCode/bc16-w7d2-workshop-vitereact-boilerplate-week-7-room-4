@@ -10,25 +10,6 @@
 	font-weight: bolder;
 }
 
-.hero-image {
-	width: 100%;
-}
-
-.orange-box {
-	background: rgb(234, 126, 23);
-	padding: 0.8em;
-}
-
-.orange-box > h1 {
-	font-weight: 900;
-	line-height: 1.5em;
-	font-size: 2em;
-}
-
-.orange-box > p {
-	font-weight: 600;
-}
-
 .phone-number {
 	color: #fff;
 	font-weight: 400;
@@ -45,24 +26,6 @@ hr {
 	height: 2px;
 	margin: 1em 0;
 	opacity: 0.2;
-}
-
-article {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-top: 1em;
-}
-
-article img {
-	width: 50%;
-	margin: 0 auto;
-}
-
-article p {
-	text-align: center;
-	padding: 1em;
 }
 
 footer {
