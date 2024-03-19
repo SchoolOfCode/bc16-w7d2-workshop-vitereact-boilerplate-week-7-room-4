@@ -7,7 +7,7 @@ import Footer from "./footer/footer";
 function App() {
 	// const [count, setCount] = useState(0);
 	let textArray = ["Find us on:", "© Fireplace Palace", "Facebook Instagram Tiktok", "info@firepalace.co.uk"]
-	let footerItems = textArray.map((text) => text.includes("@") ? <a href ="">{text}</a> : <p>{text}</p>);
+	let footerItems = textArray.map((text) => text.includes("@") ? <a key={text} href ="">{text}</a> : <p key={text}>{text}</p>);
 	return (
 		<div className="container">
 			<header className="logo">
