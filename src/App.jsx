@@ -6,7 +6,8 @@ import Footer from "./footer/footer";
 
 function App() {
 	// const [count, setCount] = useState(0);
-
+	let textArray = ["Find us on:", "© Fireplace Palace", "Facebook Instagram Tiktok", "info@firepalace.co.uk"]
+	let footerItems = textArray.map((text) => text.includes("@") ? <a href ="">{text}</a> : <p>{text}</p>);
 	return (
 		<div className="container">
 			<header className="logo">
@@ -21,10 +22,7 @@ function App() {
 
 			<ArticleContainer />
 			<Footer
-				text1={"Find us on:"}
-				text2={"© Fireplace Palace"}
-				text3={"Facebook Instagram Tiktok"}
-				anchor={"info@firepalace.co.uk"}
+				footerItems = {footerItems}
 			/>
 		</div>
 	);
