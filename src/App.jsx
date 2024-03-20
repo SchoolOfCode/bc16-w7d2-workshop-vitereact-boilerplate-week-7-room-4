@@ -4,6 +4,7 @@ import HeroSection from "./hero-section/hero-section";
 import ArticleContainer from "./article-container/article-container";
 import Footer from "./footer/footer";
 import footerItems from "./footer/footer-list";
+import { dataMap } from "./article-container/article-container";
 
 function App() {
 	// const [count, setCount] = useState(0);
@@ -20,7 +21,7 @@ function App() {
 			<h2>How it works.</h2>
 			<hr />
 
-			<ArticleContainer />
+			<ArticleContainer articles={dataMap} />
 			<Footer items={footerItems} />
 		</div>
 	);
