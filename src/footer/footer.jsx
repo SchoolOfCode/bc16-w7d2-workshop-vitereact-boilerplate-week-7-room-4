@@ -1,9 +1,5 @@
 import "./footer.css";
 
-export default function Footer(props) {
-	return (
-		<footer>
-			{props.footerItems}
-		</footer>
-	);
+export default function Footer(prop) {
+	return <footer>{prop.items}</footer>;
 }
