@@ -3,11 +3,11 @@ import "./App.css";
 import HeroSection from "./hero-section/hero-section";
 import ArticleContainer from "./article-container/article-container";
 import Footer from "./footer/footer";
+import footerItems from "./footer/footer-list";
 
 function App() {
 	// const [count, setCount] = useState(0);
-	let textArray = ["Find us on:", "© Fireplace Palace", "Facebook Instagram Tiktok", "info@firepalace.co.uk"]
-	let footerItems = textArray.map((text) => text.includes("@") ? <a key={text} href ="">{text}</a> : <p key={text}>{text}</p>);
+
 	return (
 		<div className="container">
 			<header className="logo">
@@ -21,9 +21,7 @@ function App() {
 			<hr />
 
 			<ArticleContainer />
-			<Footer
-				footerItems = {footerItems}
-			/>
+			<Footer items={footerItems} />
 		</div>
 	);
 }
